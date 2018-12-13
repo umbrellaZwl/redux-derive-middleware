@@ -1,0 +1,14 @@
+{
+  "env": {
+    "production": {
+      "presets": [
+        "env"
+      ]
+    },
+    "es": {
+      "presets": [
+        ["env", { "modules": false }],
+      ]
+    }
+  }
+}

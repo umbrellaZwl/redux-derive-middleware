@@ -1,0 +1,24 @@
+{
+  "name": "derive-middleware",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/derive-middleware.min.js",
+  "module": "dist/es/index.js",
+  "scripts": {
+    "build": "rm -rf dist & npm run build-es & npm run build-umd",
+    "build-es": "BABEL_ENV=es `npm bin`/babel src -d dist/es",
+    "build-umd": "NODE_ENV=production `npm bin`/webpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "clean-webpack-plugin": "^1.0.0",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  }
+}
