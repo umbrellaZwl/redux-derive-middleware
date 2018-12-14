@@ -1,6 +1,6 @@
 {
-  "name": "derive-middleware",
-  "version": "1.0.0",
+  "name": "redux-derive-middleware",
+  "version": "0.0.0",
   "description": "",
   "main": "dist/derive-middleware.min.js",
   "module": "dist/es/index.js",
@@ -9,7 +9,17 @@
     "build-es": "BABEL_ENV=es `npm bin`/babel src -d dist/es",
     "build-umd": "NODE_ENV=production `npm bin`/webpack"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/umbrellaZwl/redux-derive-middleware.git"
+  },
+  "keywords": [
+    "redux",
+    "middleware",
+    "derive",
+    "action",
+    "reducer"
+  ],
   "author": "",
   "license": "ISC",
   "devDependencies": {
